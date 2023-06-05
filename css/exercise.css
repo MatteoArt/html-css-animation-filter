@@ -1,0 +1,129 @@
+/* in questo file oltre ai vari selettori di pseudo classi recupero le
+classi usate in style.css aggiungendo le transition */
+div.ex-1-square {
+    transition: background-color 1.5s;
+}
+div.ex-1-square:hover {
+    background-color: red;
+}
+div.ex-2-square {
+    transition: width 2.5s;
+}
+div.ex-2-square:active {
+    width: 1098px;
+}
+div.ex-3-square {
+    transition: border-radius 1s;
+}
+div.ex-3-square:hover {
+    border-radius: 50%;
+}
+div.ex-4-square {
+    transition: background-color 1s;
+}
+div.ex-4-square:hover {
+    background-color: transparent;
+}
+div.ex-5-square {
+    transition: scale 0.7s;
+}
+div.ex-5-square:hover {
+    scale: 2;
+}
+div.ex-5-square:active {
+    scale: 0.5;
+}
+img.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+img.ex-7-img {
+    transition: filter 1.5s;
+}
+img.ex-7-img:hover {
+    filter: grayscale(100%) brightness(150%);
+}
+img.ex-8-img {
+    transition: all 2s;
+}
+img.ex-8-img:hover {
+    filter: sepia(80%) grayscale(40%);
+    border-radius: 20px;
+}
+img.ex-9-img {
+    transition: all 2s;
+}
+img.ex-9-img:hover {
+    filter: drop-shadow(10px 10px 10px gray) sepia(60%);
+    border-radius: 20px;
+    scale: 1.5;
+}
+.ex-10-icon.fas.fa-circle-notch {
+    animation: circle infinite reverse linear 1s;
+}
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.ex-11-icon.fas.fa-circle-notch:hover {
+    animation: circle2 linear 2s;
+}
+@keyframes circle2 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+.ex-12-button:hover div.ex-12-top-white {
+    animation: ex-12-top linear 2s;
+}
+@keyframes ex-12-top {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        width: 60px;
+    }
+}
+.ex-12-button:hover div.ex-12-bottom-white {
+    animation: ex-12-bottom linear 2s;
+}
+@keyframes ex-12-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+.ex-13-button:hover div.ex-13-top-white {
+    animation: top-circle linear 2s;
+}
+@keyframes top-circle {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    50% {
+        top: -10px;
+        left: calc(100% - 50px);
+    }
+    75% {
+        top: 70px;
+        left: calc(100% - 50px);
+    }
+}
