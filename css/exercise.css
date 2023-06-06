@@ -118,12 +118,12 @@ img.ex-9-img:hover {
         top: -10px;
         left: 10%;
     }
-    50% {
+    30% {
         top: -10px;
-        left: calc(100% - 50px);
+        left: calc(100% - 30px);
     }
-    75% {
-        top: 70px;
-        left: calc(100% - 50px);
+    45% {
+        top: 100%;
+        left: calc(100% - 30px);
     }
 }
